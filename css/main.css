@@ -340,7 +340,8 @@ ul{
 }
 /*///////////////////////////// Header /////////////////////////////////////*/
 .header-content,
-.main-content{
+.main-content,
+.right-sidebar{
   font-size: 1rem;
 }
 
@@ -562,6 +563,9 @@ ul{
 
 
 /*////////////////////////////////////// Content /////////////////////////////////*/
+.container{
+  max-width: 1200px;
+}
 .site-content{
   padding-top: 10px;
 }
@@ -627,4 +631,40 @@ ul{
   font-size: 1rem;
   line-height: 160%;
   margin-bottom: 4px;
+}
+.list-sub-feature{
+  margin-bottom: 20px;
+}
+.post_item{
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  width: 100%;
+}
+.post_item .thumb-art{
+  width: 35%;
+}
+.post_item .description{
+  width: 65%;
+  padding: 15px;
+}
+.most-new{
+  margin-top: 20px;
+}
+.most-new .most-new-title{
+  text-transform: uppercase;
+  padding-left: 13px;
+  position: relative;
+  font-size: 1.3rem;
+}
+.most-new .most-new-title:before{
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: -moz-calc(100% - 8px);
+  height: calc(100% - 8px);
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-color: #2fa1b3
 }
